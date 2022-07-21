@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>最終課題</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav><a href=".first-block">Home</a></nav>
+    <nav><a href=".second-block">About me</a></nav>
+    <nav><a href=".third-block">Recent Events</a></nav>
+  </header>
+
+  <section id="first-block">
+    <form><input type="button" value="今日の運勢" onClick="random()">
+      <span id="omikuji"></span>
+    </form>
+
+    <script type="text/javascript">
+      function random() {
+        var rand = Math.floor(Math.random() * 7);
+        if (rand == 0) msg = "大吉";
+        if (rand == 1) msg = "吉";
+        if (rand == 2) msg = "中吉";
+        if (rand == 3) msg = "小吉";
+        if (rand == 4) msg = "末吉";
+        if (rand == 5) msg = "凶";
+        if (rand == 6) msg = "大凶";
+        document.getElementById("omikuji").innerHTML = msg;
+      }
+    </script>
+  </section>
+  <section id="second-block">
+    <p class="info-title">
+      About me
+    </p>
+    <div class="about-container">
+      <p class="info-text">
+        <b>サークル: 軟式野球</b>
+        <br>
+        <span class="font-small">
+          軟式野球部に所属しています。
+          <br>
+          部員同士仲が良くて楽しいです。
+          <br>
+          代打の神様です。
+        </span>
+      </p>
+
+      <p class="info-text">
+        <b>創価大学文学部</b>
+        <br>
+        <span class="font-small">
+          将来は金融関係の仕事につきたいです。
+          <br>
+          日々経営や経済の勉強をしています。
+          <br>
+          ギャンブルにハマっています。
+        </span>
+      </p>
+
+      <p class="info-text">
+        <b>趣味: アニメ</b>
+        <br>
+        <span class="font-small">
+          ミステリーが好きです。
+          <br>
+          好きなキャラクターは千反田えるです。
+          <br>
+          私、気になります。
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <section id="third-block">
+    <p class="events-title">
+      Recent Events
+    </p>
+    <div class="event-container">
+      <div class="event">
+        <p class="event-name">
+          <span>7/27〜9/8<br>夏季休業</span>
+          <br>
+          <br>
+          今年の夏はたくさん遊びます。<br>
+          去年はバイト三昧だったので<br>
+          たくさん遊びます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
